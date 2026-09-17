@@ -18,6 +18,8 @@ public class Registration { //start of class
     public boolean checkUserName(String username) { //start of username
         return username.contains("@") && username.length()>=3;
         
+        public boolean checkMyUserName(String username) { //start of username
+        return username.contains("@") && username.length()>=3;
 }//end of username method
     
 public boolean checkPasswordComplexity(String password){ //start of password method
