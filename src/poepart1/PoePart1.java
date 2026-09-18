@@ -39,11 +39,18 @@ public class PoePart1 {
         }else{
    
            System.out.println("Invalid password" + "please ensure that the password contains" + 
-                   "at least eight characters, a capital letter" + "a number, and a special character");
+                    "at least eight characters, a capital letter" + "a number, and a special character");
        
         System.out.println("Enter cellphone:");
         String cellphone = scan.nextLine();
-       
+        
+       if(register.checkCellPhone(cellphone)){
+           
+            System.out.println("cellphone captured successfully");
+        }else{
+   
+           System.out.println("Cellphone number incorrectly formatted" + "or does not contain international code");
+        
         System.out.println(register.registrationUser(name, password, cellphone));
        
         if(!register.registrationUser(name, password, cellphone)) {
@@ -66,7 +73,8 @@ public class PoePart1 {
         }
         }
     }
-}  
+}
+}
     
     
 
