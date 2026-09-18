@@ -35,10 +35,11 @@ public class PoePart1 {
        
         if(register.checkPasswordComplexity(password)){
            
-            System.out.println("Password caption successfully");
+            System.out.println("Password captured successfully");
         }else{
    
-           System.out.println("Invalid password");
+           System.out.println("Invalid password" + "please ensure that the password contains" + 
+                   "at least eight characters, a capital letter" + "a number, and a special character");
        
         System.out.println("Enter cellphone:");
         String cellphone = scan.nextLine();
