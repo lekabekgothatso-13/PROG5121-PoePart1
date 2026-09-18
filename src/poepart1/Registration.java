@@ -17,10 +17,18 @@ public class Registration { //start of class
     
     public boolean checkUserName(String username) { //start of username
         return username.contains("@") && username.length()>=3;
+    }
         
-        public boolean checkMyUserName(String username) { //start of username
+        public boolean checkMyUserName(String username) {// start of username
         return username.contains("@") && username.length()>=3;
 }//end of username method
+        
+    /**
+     *
+     * @param username
+     * @return
+     */
+    
     
 public boolean checkPasswordComplexity(String password){ //start of password method
         return password.length()>=8 &&
@@ -57,6 +65,10 @@ public String registerUser(String username, String password, String cellphone){
         return "Registration was unsuccessful";
     }
 }
+
+    private boolean checkCellPhoneNumeric() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
     private boolean checkCellPhoneNumeric(String cellphone) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
