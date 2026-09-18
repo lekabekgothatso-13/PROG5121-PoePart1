@@ -8,8 +8,12 @@ package poepart1;
  *
  * @author Student
  */
+//create Login class
+// make Login extend Registration
+
 public class Login extends Registration {
     
+    //add Login constructor and authenticator
     public boolean loginUser(String name, String password){
         if(name.equals(userName) && password.equals(password)){
             return true;
@@ -18,6 +22,7 @@ public class Login extends Registration {
         }
     }
     
+    //add Login status method
     public String returnLoginStatus(boolean loginStatus){
         if(loginStatus){
             return "Login success";
